@@ -103,4 +103,5 @@ obj-$(CONFIG_CACHE_TAUROS2)	+= cache-tauros2.o
 obj-$(CONFIG_VCM)		+= vcm.o vcm_alloc.o
 obj-$(CONFIG_VCM_MM)		+= vcm_mm.o
 
-CFLAGS_dma-mapping.o = -Wno-array-bounds 
+CFLAGS_dma-mapping.o = -Wno-array-bounds
+CFLAGS_alignment.o = -Wno-maybe-uninitialized 
