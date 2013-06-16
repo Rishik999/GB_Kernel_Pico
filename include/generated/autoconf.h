@@ -1,7 +1,7 @@
 /*
  * Automatically generated C config: don't edit
  * Linux/arm 2.6.38.6 Kernel Configuration
- * Thu Jun  6 15:01:20 2013
+ * Fri Jun 14 18:52:37 2013
  */
 #define CONFIG_NF_CONNTRACK_H323 1
 #define CONFIG_KERNEL_GZIP 1

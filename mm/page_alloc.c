@@ -5437,10 +5437,10 @@ int set_migratetype_isolate(struct page *page)
 	struct memory_isolate_notify arg;
 	int notifier_ret;
 	int ret = -EBUSY;
-	int zone_idx;
+	
 
-	zone = page_zone(page);
-	zone_idx = zone_idx(zone);
+        zone = page_zone(page);
+	
 
 	spin_lock_irqsave(&zone->lock, flags);
 
