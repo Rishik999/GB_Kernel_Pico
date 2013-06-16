@@ -5439,7 +5439,11 @@ int set_migratetype_isolate(struct page *page)
 	int ret = -EBUSY;
 	
 
+<<<<<<< HEAD
         zone = page_zone(page);
+=======
+	zone = page_zone(page);
+>>>>>>> f16f2edab66533107cef3e9881b4b4eaa57fce40
 	
 
 	spin_lock_irqsave(&zone->lock, flags);

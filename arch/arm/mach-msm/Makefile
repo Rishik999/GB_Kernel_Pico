@@ -267,5 +267,8 @@ obj-$(CONFIG_PERFLOCK) += perflock.o
 obj-$(CONFIG_PERFLOCK) += htc_set_perflock.o
 
 obj-y += pwrtest.o
+<<<<<<< HEAD
 
 CFLAGS_irq-vic.o = -Wno-array-bounds
+=======
+>>>>>>> f16f2edab66533107cef3e9881b4b4eaa57fce40

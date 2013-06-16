@@ -8265,7 +8265,11 @@ int alloc_fair_sched_group(struct task_group *tg, struct task_group *parent)
 {
 	struct cfs_rq *cfs_rq;
 	struct sched_entity *se;
+<<<<<<< HEAD
 	//struct rq *rq;
+=======
+	
+>>>>>>> f16f2edab66533107cef3e9881b4b4eaa57fce40
 	int i;
 
 	tg->cfs_rq = kzalloc(sizeof(cfs_rq) * nr_cpu_ids, GFP_KERNEL);
@@ -8278,7 +8282,11 @@ int alloc_fair_sched_group(struct task_group *tg, struct task_group *parent)
 	tg->shares = NICE_0_LOAD;
 
 	for_each_possible_cpu(i) {
+<<<<<<< HEAD
 		//rq = cpu_rq(i);
+=======
+	
+>>>>>>> f16f2edab66533107cef3e9881b4b4eaa57fce40
 
 		cfs_rq = kzalloc_node(sizeof(struct cfs_rq),
 				      GFP_KERNEL, cpu_to_node(i));
@@ -8356,7 +8364,11 @@ int alloc_rt_sched_group(struct task_group *tg, struct task_group *parent)
 {
 	struct rt_rq *rt_rq;
 	struct sched_rt_entity *rt_se;
+<<<<<<< HEAD
 	//struct rq *rq;
+=======
+	
+>>>>>>> f16f2edab66533107cef3e9881b4b4eaa57fce40
 	int i;
 
 	tg->rt_rq = kzalloc(sizeof(rt_rq) * nr_cpu_ids, GFP_KERNEL);
@@ -8370,7 +8382,11 @@ int alloc_rt_sched_group(struct task_group *tg, struct task_group *parent)
 			ktime_to_ns(def_rt_bandwidth.rt_period), 0);
 
 	for_each_possible_cpu(i) {
+<<<<<<< HEAD
 		//rq = cpu_rq(i);
+=======
+	
+>>>>>>> f16f2edab66533107cef3e9881b4b4eaa57fce40
 
 		rt_rq = kzalloc_node(sizeof(struct rt_rq),
 				     GFP_KERNEL, cpu_to_node(i));
